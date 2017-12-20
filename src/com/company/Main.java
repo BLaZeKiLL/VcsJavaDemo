@@ -35,7 +35,7 @@ public class Main
         System.out.print(x);
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked") // assumed input is a number no checking
     static <T extends Number> T input()
     {
         System.out.println("Enter a no.");
