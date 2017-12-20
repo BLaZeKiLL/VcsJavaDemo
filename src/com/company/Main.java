@@ -5,6 +5,10 @@ import java.util.*;
 @SuppressWarnings("WeakerAccess")
 public class Main
 {
+    static void line()
+    {
+        System.out.println();
+    }
 
     static int add(int a,int b)
     {
@@ -33,6 +37,7 @@ public class Main
 
     static int input()
     {
+        System.out.println("Enter a no.");
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
     }
@@ -44,6 +49,16 @@ public class Main
 	    int a = input();
 	    int b = input();
 
-        System.out.println("add = " + add(a,b) + " subtract = " + subtract(a,b) + " multiply = " + multiply(a,b));
+        System.out.print("Add = ");
+        output(add(a,b));line();
+
+        System.out.print("Subtract = ");
+        output(subtract(a,b));line();
+
+        System.out.print("Multiply = ");
+        output(multiply(a,b));line();
+
+        System.out.println("Divide = ");
+
     }
 }
