@@ -29,5 +29,8 @@ public class Main
     public static void main(String[] args)
     {
 	    System.out.println("Supp people ??");
+	    System.out.println("add subtract multiply");
+	    int a = input();
+	    int b = input();
     }
 }
