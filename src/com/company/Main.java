@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.*;
+
 public class Main
 {
 
@@ -23,8 +25,17 @@ public class Main
         System.out.print(x);
     }
 
+    static int input()
+    {
+        Scanner sc = new Scanner(System.in);
+        return sc.nextInt();
+    }
+
     public static void main(String[] args)
     {
 	    System.out.println("Supp people ??");
+	    System.out.println("add subtract multiply");
+	    int a = input();
+	    int b = input();
     }
 }
