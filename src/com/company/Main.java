@@ -32,6 +32,7 @@ public class Main
 
     static int input()
     {
+        System.out.println("Enter a no.");
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
     }
