@@ -30,12 +30,7 @@ public class Main
         return (double)a/b;
     }
 
-    static void output(int x)
-    {
-        System.out.print(x);
-    }
-
-    static void output(double x)
+    static <T extends Number> void output(T x)
     {
         System.out.print(x);
     }
