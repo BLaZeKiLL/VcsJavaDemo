@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.*;
 
+@SuppressWarnings("WeakerAccess")
 public class Main
 {
 
@@ -34,8 +35,10 @@ public class Main
     public static void main(String[] args)
     {
 	    System.out.println("Supp people ??");
-	    System.out.println("add subtract multiply");
+
 	    int a = input();
 	    int b = input();
+
+        System.out.println("add = " + add(a,b) + " subtract = " + subtract(a,b) + " multiply = " + multiply(a,b));
     }
 }
