@@ -21,6 +21,11 @@ public class Main
         return a*b;
     }
 
+    static double divide(int a,int b)
+    {
+        return a/b;
+    }
+
     static void output(int x)
     {
         System.out.print(x);
