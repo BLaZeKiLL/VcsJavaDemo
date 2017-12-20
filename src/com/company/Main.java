@@ -45,10 +45,10 @@ public class Main
 
     public static void main(String[] args)
     {
-	    System.out.println("Supp people ??");
+    	System.out.println("Supp people ??");
 
-	    Variable a = new Variable(input());
-	    Variable b = new Variable(input());
+    	Variable a = new Variable(input());
+    	Variable b = new Variable(input());
 
         System.out.print("Add = ");
         output(add(a.getVal(),b.getVal()));line();
