@@ -4,7 +4,7 @@ public class Variable
 {
     private double val;
 
-    public <T extends Number> Variable(T val)
+    <T extends Number> Variable(T val)
     {
         this.val=val.doubleValue();
     }
@@ -12,5 +12,11 @@ public class Variable
     public double getVal()
     {
         return val;
+    }
+
+    @Override
+    public String toString()
+    {
+        return String.valueOf(val);
     }
 }
