@@ -1,6 +1,12 @@
 package com.company;
 
-public class Main {
+public class Main
+{
+
+    static int add(int a,int b)
+    {
+        return a+b;
+    }
 
     static int subtract(int a,int b)
     {
