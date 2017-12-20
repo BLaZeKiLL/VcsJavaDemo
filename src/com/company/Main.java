@@ -10,24 +10,24 @@ public class Main
         System.out.println();
     }
 
-    static int add(int a,int b)
+    static double add(double a, double b)
     {
         return a+b;
     }
 
-    static int subtract(int a,int b)
+    static double subtract(double a, double b)
     {
         return a-b;
     }
 
-    static int multiply(int a,int b)
+    static double multiply(double a, double b)
     {
         return a*b;
     }
 
-    static double divide(int a,int b)
+    static double divide(double a, double b)
     {
-        return (double)a/b;
+        return a/b;
     }
 
     static <T extends Number> void output(T x)
@@ -35,30 +35,31 @@ public class Main
         System.out.print(x);
     }
 
-    static int input()
+    @SuppressWarnings("unchecked") // assumed input is a number no checking
+    static <T extends Number> T input()
     {
         System.out.println("Enter a no.");
         Scanner sc = new Scanner(System.in);
-        return sc.nextInt();
+        return (T) new Double(sc.nextDouble());
     }
 
     public static void main(String[] args)
     {
 	    System.out.println("Supp people ??");
 
-	    int a = input();
-	    int b = input();
+	    Variable a = new Variable(input());
+	    Variable b = new Variable(input());
 
         System.out.print("Add = ");
-        output(add(a,b));line();
+        output(add(a.getVal(),b.getVal()));line();
 
         System.out.print("Subtract = ");
-        output(subtract(a,b));line();
+        output(subtract(a.getVal(),b.getVal()));line();
 
         System.out.print("Multiply = ");
-        output(multiply(a,b));line();
+        output(multiply(a.getVal(),b.getVal()));line();
 
         System.out.print("Divide = ");
-        output(divide(a,b));line();
+        output(divide(a.getVal(),b.getVal()));line();
     }
 }
