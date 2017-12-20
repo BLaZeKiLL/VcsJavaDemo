@@ -53,5 +53,7 @@ public class Main
         System.out.print("Multiply = ");
         output(multiply(a,b));line();
 
+        System.out.println("Divide = ");
+
     }
 }
