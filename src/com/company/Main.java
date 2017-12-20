@@ -18,6 +18,11 @@ public class Main
         return a*b;
     }
 
+    static void output(int x)
+    {
+        System.out.print(x);
+    }
+
     public static void main(String[] args)
     {
 	    System.out.println("Supp people ??");
