@@ -35,11 +35,12 @@ public class Main
         System.out.print(x);
     }
 
-    static int input()
+    @SuppressWarnings("unchecked")
+    static <T extends Number> T input()
     {
         System.out.println("Enter a no.");
         Scanner sc = new Scanner(System.in);
-        return sc.nextInt();
+        return (T) new Double(sc.nextDouble());
     }
 
     public static void main(String[] args)
