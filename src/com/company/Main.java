@@ -35,6 +35,11 @@ public class Main
         System.out.print(x);
     }
 
+    static void output(double x)
+    {
+        System.out.print(x);
+    }
+
     static int input()
     {
         System.out.println("Enter a no.");
@@ -59,6 +64,6 @@ public class Main
         output(multiply(a,b));line();
 
         System.out.println("Divide = ");
-
+        output(divide(a,b));line();
     }
 }
