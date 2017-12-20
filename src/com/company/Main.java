@@ -27,7 +27,7 @@ public class Main
 
     static double divide(int a,int b)
     {
-        return a/b;
+        return (double)a/b;
     }
 
     static void output(int x)
@@ -63,7 +63,7 @@ public class Main
         System.out.print("Multiply = ");
         output(multiply(a,b));line();
 
-        System.out.println("Divide = ");
+        System.out.print("Divide = ");
         output(divide(a,b));line();
     }
 }
