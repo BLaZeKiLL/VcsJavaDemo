@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.*;
+
 public class Main
 {
 
@@ -16,6 +18,12 @@ public class Main
     static int multiply(int a,int b)
     {
         return a*b;
+    }
+
+    static int input()
+    {
+        Scanner sc = new Scanner(System.in);
+        return sc.nextInt();
     }
 
     public static void main(String[] args)
