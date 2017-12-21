@@ -30,6 +30,18 @@ public class Main
         return a/b;
     }
 
+    static int factorial(int x)
+    {
+        NumericFunction factorial;
+        factorial = n -> {
+            int result=1;
+            for (int i = 1; i <= n; i++)
+                result *= i;
+            return result;
+        };
+        return factorial.function(x);
+    }
+
     static <T extends Number> void output(T x)
     {
         System.out.print(x);
@@ -62,15 +74,7 @@ public class Main
         System.out.print("Divide = ");
         output(divide(a.getVal(),b.getVal()));line();
 
-        NumericFunction factorial;
-        factorial = n -> {
-            int result=1;
-            for (int i = 1; i <= n; i++)
-                result *= i;
-            return result;
-        };
-
         System.out.print("Factorial a = ");
-        output(factorial.function(((int) a.getVal())));
+        output(factorial((int)a.getVal()));
     }
 }
