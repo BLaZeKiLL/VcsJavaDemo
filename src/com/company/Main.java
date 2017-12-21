@@ -35,7 +35,7 @@ public class Main
         System.out.print(x);
     }
 
-    @SuppressWarnings("unchecked") // TODO Checking_Input branch
+    @SuppressWarnings("unchecked") // Checking_Input branch
     static <T extends Number> T input()
     {
         System.out.println("Enter a no.");
@@ -61,5 +61,16 @@ public class Main
 
         System.out.print("Divide = ");
         output(divide(a.getVal(),b.getVal()));line();
+
+        NumericFunction factorial;
+        factorial = n -> {
+            int result=1;
+            for (int i = 1; i <= n; i++)
+                result *= i;
+            return result;
+        };
+
+        System.out.print("Factorial a = ");
+        output(factorial.function(((int) a.getVal())));
     }
 }
